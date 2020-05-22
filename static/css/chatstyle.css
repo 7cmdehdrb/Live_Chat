@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "나눔고딕 ExtraBold";
+    src: local(NanumGothicExtraBold),
+         url(NanumGothicExtraBold.ttf);
+}
+
+.mainbox {
+    position: relative;
+
+    width: 60%;
+    margin-top: 120px;
+    margin-right: auto;
+    margin-left: auto;
+
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+
+    text-align: center;
+    font-family: "나눔고딕 ExtraBold";
+    font-size: x-large;
+}
+
+.subbox {
+    position: fixed;
+    top: 0px;
+
+    width: 100%;
+    height: 40px;
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    border: 1;
+    border-color: gainsboro;
+    border-style: solid;
+    border-width: 2px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+
+    text-align: center;
+    background-color: white;
+
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 50px;
+    height: 100%;
+    
+    text-align: center;
+
+    border: 1;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+    
+    background-color:white;
+
+    transition: ease-in-out;
+    transition-duration: 1s;
+
+}
+
+
+.syschat {
+    width: 60%;
+    margin-right: auto;
+    margin-left: 30px;
+    background-color: salmon;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 40px;
+
+    text-align: left;
+}
+
+.mychat {
+    width: 60%;
+    margin-left: auto;
+    margin-right: 30px;
+    /* background-color: pink; */
+    background-color: #ffeb33;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 40px;
+
+    text-align: right;
+}
+
+#notice, #autoscroll, #alter, #chatload {
+
+    display: block;
+    color: black;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: xx-large;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    opacity: 0%;
+    transition: ease-in-out;
+    transition-delay: 500ms;
+    transition-duration: 500ms;
+
+}
+
+#list:hover {
+    color: lightslategray;
+}

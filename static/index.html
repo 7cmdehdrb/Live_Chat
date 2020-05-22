@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/chatstyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://jsgetip.appspot.com" type="text/javascript"></script>
+    <script src="/js/chatjs.js"></script>
+    <title>CHAT</title>
+</head>
+<body id="body">
+
+    <div class="mainbox" style="background-color: #c4dbee;">
+        <div class="syschat"><<공지>><br>1. 구글 번역을 꺼주세요<br>2. 본 서비스는 HTML5를 이용, Chrome에 최적화 되어 있습니다</div>
+    </div>
+    
+    <div class="subbox">
+        <input type="text" name="" id="text" style="width: 35%; text-align: center;">
+        <button onclick="send();">전송</button>
+    </div>
+    
+    <div class="nav">
+        <i class="fas fa-cog" id="list" style="margin-top: 35px; font-size: xx-large;" onclick="list();"></i>
+        
+        <div id="navcontent" style="margin-top: 100px;">
+      
+            <span id="autoscroll" onclick="autoscroll();"><i id="autoscrollbtn" class="fas fa-eye"></i> 오토스크롤 </span>
+            
+            <br>
+
+            <span id="notice" onclick="notification();"><i id="noticebtn" class="far fa-bell"></i> 알림설정 </span>
+
+            <br>
+
+            <span id="alter" onclick="alter();"><i id="alterbtn" class="fas fa-address-card"></i> 이름변경 </span>
+
+            <br>
+
+            <span id="chatload" onclick="lastchat();"><i class="fas fa-spinner"></i> 채팅로드 </span>
+
+        </div>
+    </div>
+
+    <audio id="sound" src="/sound/카톡.mp3"></audio>
+
+</body>
+</html>
